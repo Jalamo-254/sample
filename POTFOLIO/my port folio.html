@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile {
+    width: 50%;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.profile .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.profile .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.content {
+    width: 50%;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #3f3f3f 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    margin-top: 10px;
+}
+
+header ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header h1 {
+    float: left;
+    display: inline;
+    padding: 10px;
+}
+
+.section {
+    padding: 20px 0;
+    clear: both;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Styling for individual sections */
+#about {
+    background: #f4f4f4;
+}
+
+#portfolio {
+    background: #fff;
+}
+
+#contact {
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="profile">
+            <div class="profile-image">
+                <!-- Replace with your profile image -->
+                <img src="JERRY.png" alt="Your Profile Image">
+            </div>
+            <div class="profile-info">
+                <h1>Your Name</h1>
+                <p>Web Developer</p>
+                <ul class="social-links">
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="about" class="section">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <p>Write a brief introduction about yourself here.</p>
+                </div>
+            </section>
+
+            <section id="portfolio" class="section">
+                <div class="container">
+                    <h2>Portfolio</h2>
+                    <div class="portfolio-items">
+                        <!-- Insert portfolio items here -->
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <p>You can reach me at example@email.com</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
